@@ -26,4 +26,19 @@ public class Circuit extends Observable {
     public void addGate(Gate gate) {
         this.gates.add(gate);
     }
+
+    /**
+     * notify observers
+     */
+    public void update() {
+        setChanged();
+        notifyObservers();
+    }
+
+    public Gate findGateAt(int x, int y) {
+        for (Gate gate : this.gates)
+            if (gate.isAt(x, y))
+                return gate;
+        return null;
+    }
 }

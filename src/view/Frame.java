@@ -1,5 +1,6 @@
 package view;
 
+import controller.GateDragger;
 import model.Circuit;
 
 import javax.swing.*;
@@ -13,8 +14,11 @@ public class Frame extends JFrame {
     public Frame(String title, Circuit circuit) {
         super(title);
         Panel panel = new Panel(circuit);
+        GateDragger gateDragger = new GateDragger(circuit);
 
         getContentPane().add(panel);
+        getContentPane().addMouseListener(gateDragger);
+        getContentPane().addMouseMotionListener(gateDragger);
 
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setResizable(false);

@@ -3,6 +3,8 @@ package model;
 import java.awt.*;
 import java.util.ArrayList;
 
+import view.Panel;
+
 public class Gate {
 
     protected ArrayList<Gate> inputs;
@@ -134,5 +136,12 @@ public class Gate {
      */
     public void connectFromOnce(Gate gate, int input) {
         this.inputs.set(input, gate);
+    }
+
+    public boolean isAt(int x, int y) {
+        return this.getX() < x
+                && this.getX() + Panel.DEFAULT_GATE_WIDTH > x
+                && this.getY() < y
+                && this.getY() + Panel.DEFAULT_GATE_HEIGHT > y;
     }
 }
