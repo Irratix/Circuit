@@ -15,6 +15,10 @@ public class Main {
         AND gate3 = new AND();
         gate3.setCoords(300, 200);
 
+        gate1.connectToComplete(gate3, 0, 0);
+        gate1.connectToComplete(gate3, 0, 1);
+        gate3.connectToComplete(gate2, 0, 0);
+
         circuit.addGate(gate1);
         circuit.addGate(gate2);
         circuit.addGate(gate3);

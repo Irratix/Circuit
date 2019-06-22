@@ -1,6 +1,7 @@
 package view;
 
 import model.Circuit;
+import model.Connector;
 import model.Gate;
 
 import javax.swing.*;
@@ -31,13 +32,22 @@ public class Panel extends JPanel implements Observer {
     private void paintConnections(Graphics g) {
         g.setColor(new Color(0, 0, 0));
         for (Gate gate1 : this.circuit.getCircuit())
-            for (Gate gate2 : gate1.getInputs())
-                if (gate2 != null)
+            for (int i=0; i<gate1.getInputs().size(); i++) {
+                Gate gate2 = gate1.getInputs().get(i);
+                if (gate2 != null) {
+                    //get the index of the connector of gate2 which is connected to gate1
+                    int connectorID = 0;
+                    for (Connector connector : gate2.getOutputs())
+                        if (connector.isConnectedTo(gate1))
+                            connectorID = gate2.getOutputs().indexOf(connector);
+                    //draw that connection
                     g.drawLine(gate1.getX()
-                            , gate1.getY()
-                            , gate2.getX()
-                            , gate2.getY()
+                            , gate1.getY() + (i+1)*DEFAULT_GATE_HEIGHT / (gate1.getInputs().size()+1)
+                            , gate2.getX() + DEFAULT_GATE_WIDTH
+                            , gate2.getY() + (connectorID+1)*DEFAULT_GATE_HEIGHT / (gate2.getOutputs().size()+1)
                     );
+                }
+            }
     }
 
     /**
@@ -73,8 +83,8 @@ public class Panel extends JPanel implements Observer {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        paintConnections(g);
         paintGates(g);
+        paintConnections(g);
     }
 
     /**

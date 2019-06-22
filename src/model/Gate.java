@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Gate {
 
     protected ArrayList<Gate> inputs;
-    protected ArrayList<Gate> outputs;
+    protected ArrayList<Connector> outputs;
     private Point coords;
 
     private static final int INIT_X = 10;
@@ -42,7 +42,7 @@ public class Gate {
      */
     protected void setInputAmt(int n) {
         if (this.inputs.size() < n)
-            for (int i = this.inputs.size(); i < n; i++)
+            for (int i = this.inputs.size(); i<n; i++)
                 this.inputs.add(null);
         while (this.inputs.size() > n)
             this.inputs.remove(n);
@@ -54,8 +54,8 @@ public class Gate {
      */
     protected void setOutputAmt(int n) {
         if (this.outputs.size() < n)
-            for (int i = this.outputs.size(); i < n; i++)
-                this.outputs.add(null);
+            for (int i = this.outputs.size(); i<n; i++)
+                this.outputs.add(new Connector());
         while (this.outputs.size() > n)
             this.outputs.remove(n);
     }
@@ -88,25 +88,25 @@ public class Gate {
      * returns a copy of all gates that receive input from this gate
      * @return
      */
-    public ArrayList<Gate> getOutputs() {
-        return (ArrayList<Gate>) this.outputs.clone();
+    public ArrayList<Connector> getOutputs() {
+        return (ArrayList<Connector>) this.outputs.clone();
     }
 
     /**
-     * makes a connection from this gate's output to another gate's input
-     * also makes the connection both ways
+     * makes a connection from this gate's output to a gate's input
+     * makes a complete connection
      * @param gate
      * @param output
      * @param input
      */
     public void connectToComplete(Gate gate, int output, int input) {
-        this.outputs.set(output, gate);
+        this.outputs.get(output).connectTo(gate);
         gate.connectFromOnce(this, input);
     }
 
     /**
-     * makes a connection from this gate's input to another gate's output
-     * also makes the connection both ways
+     * makes a connection from a gate's output to this gate's input
+     * makes a complete connection
      * @param gate
      * @param output
      * @param input
@@ -117,22 +117,22 @@ public class Gate {
     }
 
     /**
-     * makes a connection from this gate's output to another gate's input
-     * only makes a one-way connection
+     * makes a connection from this gate's output to a gate's input
+     * only consolidates the connection from this gate's end
      * @param gate
      * @param output
      */
-    private void connectToOnce(Gate gate, int output) {
-        this.outputs.set(output, gate);
+    public void connectToOnce(Gate gate, int output) {
+        this.outputs.get(output).connectTo(gate);
     }
 
     /**
-     * makes a connection from this gate's input to another gate's output
-     * only makes a one-way connection
+     * makes a connection from a gate's output to this gate's input
+     * only consolidates the connection from this gate's end
      * @param gate
      * @param input
      */
-    private void connectFromOnce(Gate gate, int input) {
+    public void connectFromOnce(Gate gate, int input) {
         this.inputs.set(input, gate);
     }
 }
