@@ -89,10 +89,12 @@ public class Panel extends JPanel implements Observer {
     private void paintGates(Graphics g) {
         for (Gate gate : this.circuit.getCircuit()) {
             g.setColor(new Color(255, 255, 255));
-            g.fillRect(gate.getX()
-                , gate.getY()
-                , DEFAULT_GATE_WIDTH
-                , DEFAULT_GATE_HEIGHT);
+            g.drawImage(GetGateTexture.getTexture(gate)
+                    , gate.getX()
+                    , gate.getY()
+                    , DEFAULT_GATE_WIDTH
+                    , DEFAULT_GATE_HEIGHT
+                    , this);
         }
     }
 

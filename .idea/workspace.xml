@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee220e19-17d4-426f-b015-6a5cbe4071ec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddANDAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddLightAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddORAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddANDButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddLightButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddORButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/GateInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GateInteraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Gates/AND.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Gates/AND.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Gates/OR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Gates/OR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Gates/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Gates/Source.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/GetGateTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circuit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Circuit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Circuit/view/Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Circuit/view/Panel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Panel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,18 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddSourceButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddANDButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddANDButton.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/controller/actions/AddNOTAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#419#420#0" expanded="true" />
@@ -92,18 +72,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddSourceAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/actions/AddSourceAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddNOTButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddORButton.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddORButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddORButton.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,16 +96,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddANDAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/actions/AddANDAction.java">
+      <file leaf-file-name="TaskBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/TaskBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="170">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetGateTexture.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/GetGateTexture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Panel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -174,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/model/Gates/Light.java" />
         <option value="$PROJECT_DIR$/src/model/Connector.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/controller/TaskBar.java" />
         <option value="$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java" />
         <option value="$PROJECT_DIR$/src/controller/actions/AddSourceAction.java" />
         <option value="$PROJECT_DIR$/src/controller/GateDragger.java" />
@@ -184,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/model/Gates/Source.java" />
         <option value="$PROJECT_DIR$/src/view/Frame.java" />
         <option value="$PROJECT_DIR$/src/controller/GateInteraction.java" />
-        <option value="$PROJECT_DIR$/src/view/Panel.java" />
         <option value="$PROJECT_DIR$/src/model/Gates/AND.java" />
         <option value="$PROJECT_DIR$/src/model/Gates/OR.java" />
         <option value="$PROJECT_DIR$/src/controller/actions/AddANDAction.java" />
@@ -195,6 +180,9 @@
         <option value="$PROJECT_DIR$/src/controller/buttons/AddLightButton.java" />
         <option value="$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java" />
         <option value="$PROJECT_DIR$/src/controller/buttons/AddORButton.java" />
+        <option value="$PROJECT_DIR$/src/controller/TaskBar.java" />
+        <option value="$PROJECT_DIR$/src/view/GetGateTexture.java" />
+        <option value="$PROJECT_DIR$/src/view/Panel.java" />
       </list>
     </option>
   </component>
@@ -222,46 +210,25 @@
             <path>
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="buttons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Gates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OOPAI/2019_Team_67/cardGame" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -355,7 +322,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -557,18 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/TaskBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/GateDragger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
@@ -669,17 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="51" column="67" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-          <folding>
-            <element signature="e#3821#3822#0" expanded="true" />
-            <element signature="e#3846#3847#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Gates/AND.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -751,7 +694,7 @@
     <entry file="file://$PROJECT_DIR$/src/controller/actions/AddNOTAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#419#420#0" expanded="true" />
@@ -795,7 +738,34 @@
     <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddORButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/TaskBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/GetGateTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
