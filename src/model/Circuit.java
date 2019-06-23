@@ -8,9 +8,11 @@ import view.Panel;
 public class Circuit extends Observable {
 
     private ArrayList<Gate> gates;
+    private Gate selection;
 
     public Circuit() {
         this.gates = new ArrayList<>();
+        this.selection = null;
     }
 
     /**
@@ -89,5 +91,39 @@ public class Circuit extends Observable {
             }
         }
         return null;
+    }
+
+    /**
+     * make a gate selected
+     * @param gate
+     */
+    public void selectGate(Gate gate) {
+        this.selection = gate;
+        gate.setAsSelected(true);
+    }
+
+    /**
+     * remove selection
+     */
+    public void removeSelection() {
+        this.selection.setAsSelected(false);
+        this.selection = null;
+    }
+
+    /**
+     * deletes the selected gate from the circuit
+     */
+    public void deleteSelected() {
+        if (this.selection != null) {
+            for (Gate gate : this.selection.getInputs())
+                for (Connector connector : gate.getOutputs())
+                    connector.removeGate(this.selection);
+            for (Connector connector : this.selection.getOutputs())
+                for (Gate gate : connector.connections())
+                    gate.removeInput(this.selection);
+            this.gates.remove(this.selection);
+            this.selection = null;
+        }
+        update();
     }
 }

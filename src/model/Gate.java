@@ -12,6 +12,7 @@ public class Gate {
     private Point coords;
     private boolean selected;
     private int selectedID;
+    private boolean isSelected;
 
     private static final int INIT_X = 10;
     private static final int INIT_Y = 10;
@@ -22,6 +23,7 @@ public class Gate {
         this.coords = new Point();
         setCoords(INIT_X, INIT_Y);
         this.selected = false;
+        this.isSelected = false;
     }
 
     /**
@@ -172,6 +174,22 @@ public class Gate {
     }
 
     /**
+     * set this gate itself as selected
+     * @param select
+     */
+    public void setAsSelected(boolean select) {
+        this.isSelected = select;
+    }
+
+    /**
+     * return whether or not this gate is selected
+     * @return
+     */
+    public boolean isSelected() {
+        return this.isSelected;
+    }
+
+    /**
      * determines whether or not this gate is selected
      * @return
      */
@@ -237,5 +255,13 @@ public class Gate {
                 return false;
         }
         return true;
+    }
+
+    /**
+     * removes an input connection
+     * @param gate
+     */
+    public void removeInput(Gate gate) {
+        this.inputs.replaceAll(connection -> connection == gate ? null : connection);
     }
 }

@@ -16,8 +16,8 @@ public class Panel extends JPanel implements Observer {
 
     private Circuit circuit;
 
-    public static final int DEFAULT_GATE_WIDTH = 100;
-    public static final int DEFAULT_GATE_HEIGHT = 100;
+    public static final int DEFAULT_GATE_WIDTH = 50;
+    public static final int DEFAULT_GATE_HEIGHT = 50;
     public static final int DEFAULT_CONNECT_RADIUS = 15;
 
     public Panel(Circuit circuit) {
@@ -93,7 +93,12 @@ public class Panel extends JPanel implements Observer {
         for (Gate gate : this.circuit.getCircuit()) {
             BufferedImage img = GetGateTexture.getTexture(gate);
             //if the gate evaluates to false, change the color of the gate
-            if (!gate.evaluate()) {
+            if (gate.isSelected()) {
+                GetGateTexture.replaceColor(
+                        img
+                        , new Color(255, 255, 255)
+                        , new Color(197, 11, 3));
+            } else if (!gate.evaluate()) {
                 GetGateTexture.replaceColor(
                         img
                         , new Color(255, 255, 255)

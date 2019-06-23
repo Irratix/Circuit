@@ -26,4 +26,20 @@ public class Connector {
     public boolean isConnectedTo(Gate gate) {
         return this.connections.contains(gate);
     }
+
+    /**
+     * removes a gate from the connection
+     * @param gate
+     */
+    public void removeGate(Gate gate) {
+        this.connections.replaceAll(connected -> connected == gate ? null : connected);
+    }
+
+    /**
+     * returns a copy of all gates connected with this connector
+     * @return
+     */
+    public ArrayList<Gate> connections() {
+        return (ArrayList<Gate>) this.connections.clone();
+    }
 }

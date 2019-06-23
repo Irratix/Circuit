@@ -15,6 +15,7 @@ public class GateInteraction extends JPanel implements MouseListener {
     public GateInteraction(Circuit circuit) {
         this.circuit = circuit;
     }
+
     @Override
     public void mouseClicked(MouseEvent e) {
         if (SwingUtilities.isLeftMouseButton(e)) {
@@ -24,6 +25,14 @@ public class GateInteraction extends JPanel implements MouseListener {
                  source.changeState();
             }
             this.circuit.update();
+        }
+        if (SwingUtilities.isRightMouseButton(e)) {
+            Gate gate = this.circuit.findGateAt(e.getX(), e.getY());
+            if (gate != null && gate.isSelected() == false) {
+                this.circuit.selectGate(gate);
+            } else {
+                this.circuit.removeSelection();
+            }
         }
     }
 

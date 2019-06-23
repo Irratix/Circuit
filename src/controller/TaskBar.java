@@ -13,6 +13,6 @@ public class TaskBar extends JMenuBar {
         add(new AddNOTButton(circuit));
         add(new AddORButton(circuit));
         add(new AddSourceButton(circuit));
-
+        add(new DeleteGateButton(circuit));
     }
 }
