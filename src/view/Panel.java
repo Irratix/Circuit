@@ -51,16 +51,11 @@ public class Panel extends JPanel implements Observer {
     }
 
     /**
-     * paint all gates on a circuit
+     * paints the connectors of the node
      * @param g
      */
-    private void paintGates(Graphics g) {
+    private void paintConnectors(Graphics g) {
         for (Gate gate : this.circuit.getCircuit()) {
-            g.setColor(new Color(255, 255, 255));
-            g.fillRect(gate.getX()
-                , gate.getY()
-                , DEFAULT_GATE_WIDTH
-                , DEFAULT_GATE_HEIGHT);
             g.setColor(new Color(70, 171, 67));
             for (int i=0; i<gate.getInputs().size(); i++)
                 g.fillOval(gate.getX() - DEFAULT_CONNECT_RADIUS/2
@@ -77,6 +72,20 @@ public class Panel extends JPanel implements Observer {
     }
 
     /**
+     * paint all gates on a circuit
+     * @param g
+     */
+    private void paintGates(Graphics g) {
+        for (Gate gate : this.circuit.getCircuit()) {
+            g.setColor(new Color(255, 255, 255));
+            g.fillRect(gate.getX()
+                , gate.getY()
+                , DEFAULT_GATE_WIDTH
+                , DEFAULT_GATE_HEIGHT);
+        }
+    }
+
+    /**
      * paint all components
      * @param g
      */
@@ -84,6 +93,7 @@ public class Panel extends JPanel implements Observer {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         paintGates(g);
+        paintConnectors(g);
         paintConnections(g);
     }
 

@@ -25,6 +25,20 @@ public class Circuit extends Observable {
      */
     public void addGate(Gate gate) {
         this.gates.add(gate);
+        update();
+    }
+
+    /**
+     * returns a gate at the passed location, or null if there is none
+     * @param x
+     * @param y
+     * @return
+     */
+    public Gate findGateAt(int x, int y) {
+        for (Gate gate : this.gates)
+            if (gate.isAt(x, y))
+                return gate;
+        return null;
     }
 
     /**
@@ -33,12 +47,5 @@ public class Circuit extends Observable {
     public void update() {
         setChanged();
         notifyObservers();
-    }
-
-    public Gate findGateAt(int x, int y) {
-        for (Gate gate : this.gates)
-            if (gate.isAt(x, y))
-                return gate;
-        return null;
     }
 }

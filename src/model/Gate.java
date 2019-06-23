@@ -10,6 +10,7 @@ public class Gate {
     protected ArrayList<Gate> inputs;
     protected ArrayList<Connector> outputs;
     private Point coords;
+    private boolean selected;
 
     private static final int INIT_X = 10;
     private static final int INIT_Y = 10;
@@ -19,6 +20,7 @@ public class Gate {
         this.outputs = new ArrayList<>();
         this.coords = new Point();
         setCoords(INIT_X, INIT_Y);
+        this.selected = false;
     }
 
     /**
@@ -138,10 +140,32 @@ public class Gate {
         this.inputs.set(input, gate);
     }
 
+    /**
+     * check if this gate is at these coordinates
+     * @param x
+     * @param y
+     * @return
+     */
     public boolean isAt(int x, int y) {
         return this.getX() < x
                 && this.getX() + Panel.DEFAULT_GATE_WIDTH > x
                 && this.getY() < y
                 && this.getY() + Panel.DEFAULT_GATE_HEIGHT > y;
+    }
+
+    /**
+     * changes selection state of this gate
+     * @param select
+     */
+    public void setSelected(boolean select) {
+        this.selected = select;
+    }
+
+    /**
+     * determines whether or not this gate is selected
+     * @return
+     */
+    public boolean getSelected() {
+        return this.selected;
     }
 }

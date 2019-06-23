@@ -28,10 +28,12 @@ public class GateDragger extends JPanel implements MouseListener, MouseMotionLis
 
     @Override
     public void mousePressed(MouseEvent e) {
-        this.gate = this.circuit.findGateAt(e.getX(), e.getY());
-        if (this.gate != null) {
-            this.relativeX = e.getX() - this.gate.getX();
-            this.relativeY = e.getY() - this.gate.getY();
+        if (SwingUtilities.isLeftMouseButton(e)) {
+            this.gate = this.circuit.findGateAt(e.getX(), e.getY());
+            if (this.gate != null) {
+                this.relativeX = e.getX() - this.gate.getX();
+                this.relativeY = e.getY() - this.gate.getY();
+            }
         }
     }
 
@@ -52,12 +54,14 @@ public class GateDragger extends JPanel implements MouseListener, MouseMotionLis
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        if (this.gate != null) {
-            this.gate.setCoords(
-                    e.getX() - this.relativeX,
-                    e.getY() - this.relativeY
-            );
-            circuit.update();
+        if (SwingUtilities.isLeftMouseButton(e)) {
+            if (this.gate != null) {
+                this.gate.setCoords(
+                        e.getX() - this.relativeX,
+                        e.getY() - this.relativeY
+                );
+                circuit.update();
+            }
         }
     }
 
