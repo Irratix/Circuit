@@ -1,5 +1,7 @@
 package model;
 
+import model.Gates.Chip;
+
 import java.util.ArrayList;
 
 public class ChipCircuit extends Circuit {
@@ -11,7 +13,6 @@ public class ChipCircuit extends Circuit {
         this.inputs = new ArrayList<>();
         this.outputs = new ArrayList<>();
     }
-
 
     /**
      * add a new input to the circuit
@@ -26,6 +27,13 @@ public class ChipCircuit extends Circuit {
      */
     public void removeInput() {
         Gate gate = this.inputs.get(this.inputs.size()-1);
+        for (Connector connector : gate.getOutputs())
+            for (Gate chip : connector.connections())
+                if (chip instanceof Chip) {
+                    Chip curChip = (Chip) chip;
+                    if (curChip.contains(this))
+                        connector.removeGate(chip);
+                }
         this.inputs.remove(gate);
         update();
     }
@@ -42,7 +50,10 @@ public class ChipCircuit extends Circuit {
      * add a new input to the circuit
      */
     public void removeOutput() {
-        this.outputs.remove(this.outputs.get(this.outputs.size()-1));
+        Connector connector = this.outputs.get(this.outputs.size()-1);
+        for (Gate gate : connector.connections())
+            gate.getInputs().removeIf(gates -> gates instanceof Chip && ((Chip)gates).contains(this));
+        this.outputs.remove(connector);
         update();
     }
 
@@ -51,7 +62,7 @@ public class ChipCircuit extends Circuit {
      * @return
      */
     public ArrayList<Gate> getInputs() {
-        return (ArrayList<Gate>) this.inputs.clone();
+        return this.inputs;
     }
 
     /**
@@ -59,6 +70,6 @@ public class ChipCircuit extends Circuit {
      * @return
      */
     public ArrayList<Connector> getOutputs() {
-        return (ArrayList<Connector>) this.outputs.clone();
+        return this.outputs;
     }
 }

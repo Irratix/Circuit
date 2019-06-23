@@ -33,4 +33,12 @@ public class Chip extends Gate implements Observer {
         this.outputs = this.circuit.getOutputs();
         notifyObservers();
     }
+
+    /**
+     * return the contained circuit
+     * @return
+     */
+    public boolean contains(ChipCircuit circuit) {
+        return this.circuit == circuit;
+    }
 }

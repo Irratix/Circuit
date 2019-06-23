@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee220e19-17d4-426f-b015-6a5cbe4071ec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/ChipCircuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/actions/AddInputAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/actions/AddInputAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/actions/AddOutputAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/actions/AddOutputAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/buttons/AddInputButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/buttons/AddInputButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/buttons/AddOutputButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/buttons/AddOutputButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/buttons/RemoveInputButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/buttons/RemoveInputButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/buttons/RemoveOutputButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/buttons/RemoveOutputButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Circuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ChipCircuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ChipCircuit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Gates/Chip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Gates/Chip.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,23 +15,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Chip.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chip.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Gates/Chip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="390">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddInputButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddInputButton.java">
+      <file leaf-file-name="Circuit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="203">
+              <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GateInteraction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/GateInteraction.java">
+      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+            <state relative-caret-position="107">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,25 +64,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoveInputButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/buttons/RemoveInputButton.java">
+      <file leaf-file-name="ChipCircuit.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="271">
+              <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveOutputButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/buttons/RemoveOutputButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1602#1603#0" expanded="true" />
+                <element signature="e#1662#1663#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#1844#1845#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,14 +116,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddChipAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/actions/AddChipAction.java">
+      <file leaf-file-name="GateInteraction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/GateInteraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -189,12 +181,9 @@
         <option value="$PROJECT_DIR$/src/controller/actions/AddChipAction.java" />
         <option value="$PROJECT_DIR$/src/controller/buttons/AddChipButton.java" />
         <option value="$PROJECT_DIR$/src/controller/TaskBar.java" />
-        <option value="$PROJECT_DIR$/src/view/Frame.java" />
         <option value="$PROJECT_DIR$/src/controller/GateInteraction.java" />
         <option value="$PROJECT_DIR$/src/model/Gate.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/model/Circuit.java" />
-        <option value="$PROJECT_DIR$/src/model/ChipCircuit.java" />
         <option value="$PROJECT_DIR$/src/controller/actions/AddInputAction.java" />
         <option value="$PROJECT_DIR$/src/controller/actions/AddOutputAction.java" />
         <option value="$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java" />
@@ -203,7 +192,10 @@
         <option value="$PROJECT_DIR$/src/controller/buttons/RemoveInputButton.java" />
         <option value="$PROJECT_DIR$/src/controller/buttons/RemoveOutputButton.java" />
         <option value="$PROJECT_DIR$/src/controller/buttons/AddOutputButton.java" />
+        <option value="$PROJECT_DIR$/src/view/Frame.java" />
+        <option value="$PROJECT_DIR$/src/model/Circuit.java" />
         <option value="$PROJECT_DIR$/src/model/Gates/Chip.java" />
+        <option value="$PROJECT_DIR$/src/model/ChipCircuit.java" />
       </list>
     </option>
   </component>
@@ -238,20 +230,6 @@
               <item name="Circuit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="buttons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
@@ -373,18 +351,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32965517" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20827587" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20827587" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38085938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16015625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -586,17 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-          <folding>
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Gates/OR.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -697,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/TaskBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -767,57 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/actions/AddInputAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddOutputAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -884,12 +794,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Gates/Chip.java">
+    <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="107">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/Chip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddOutputAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
           </folding>
         </state>
       </provider>
