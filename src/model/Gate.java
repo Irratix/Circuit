@@ -2,10 +2,11 @@ package model;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Observable;
 
 import view.Panel;
 
-public class Gate {
+public class Gate extends Observable {
 
     protected ArrayList<Gate> inputs;
     protected ArrayList<Connector> outputs;

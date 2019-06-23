@@ -33,6 +33,5 @@ public class Frame extends JFrame {
         setResizable(true);
         pack();
         setVisible(true);
-
     }
 }
