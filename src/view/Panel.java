@@ -3,9 +3,12 @@ package view;
 import model.Circuit;
 import model.Connector;
 import model.Gate;
+import model.Gates.Light;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.WritableRaster;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -88,8 +91,15 @@ public class Panel extends JPanel implements Observer {
      */
     private void paintGates(Graphics g) {
         for (Gate gate : this.circuit.getCircuit()) {
-            g.setColor(new Color(255, 255, 255));
-            g.drawImage(GetGateTexture.getTexture(gate)
+            BufferedImage img = GetGateTexture.getTexture(gate);
+            //if the gate evaluates to false, change the color of the gate
+            if (!gate.evaluate()) {
+                GetGateTexture.replaceColor(
+                        img
+                        , new Color(255, 255, 255)
+                        , new Color(87, 93, 171));
+            }
+            g.drawImage(img
                     , gate.getX()
                     , gate.getY()
                     , DEFAULT_GATE_WIDTH
