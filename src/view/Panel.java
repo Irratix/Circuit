@@ -15,7 +15,7 @@ public class Panel extends JPanel implements Observer {
 
     public static final int DEFAULT_GATE_WIDTH = 100;
     public static final int DEFAULT_GATE_HEIGHT = 100;
-    private static final int DEFAULT_CONNECT_RADIUS = 15;
+    public static final int DEFAULT_CONNECT_RADIUS = 15;
 
     public Panel(Circuit circuit) {
         this.circuit = circuit;
@@ -30,9 +30,13 @@ public class Panel extends JPanel implements Observer {
      * @param g
      */
     private void paintConnections(Graphics g) {
-        g.setColor(new Color(0, 0, 0));
-        for (Gate gate1 : this.circuit.getCircuit())
-            for (int i=0; i<gate1.getInputs().size(); i++) {
+        for (Gate gate1 : this.circuit.getCircuit()) {
+            if (gate1.evaluate()) {
+                g.setColor(new Color(255, 255, 255));
+            } else {
+                g.setColor(new Color(0, 0, 0));
+            }
+            for (int i = 0; i < gate1.getInputs().size(); i++) {
                 Gate gate2 = gate1.getInputs().get(i);
                 if (gate2 != null) {
                     //get the index of the connector of gate2 which is connected to gate1
@@ -42,12 +46,13 @@ public class Panel extends JPanel implements Observer {
                             connectorID = gate2.getOutputs().indexOf(connector);
                     //draw that connection
                     g.drawLine(gate1.getX()
-                            , gate1.getY() + (i+1)*DEFAULT_GATE_HEIGHT / (gate1.getInputs().size()+1)
+                            , gate1.getY() + (i + 1) * DEFAULT_GATE_HEIGHT / (gate1.getInputs().size() + 1)
                             , gate2.getX() + DEFAULT_GATE_WIDTH
-                            , gate2.getY() + (connectorID+1)*DEFAULT_GATE_HEIGHT / (gate2.getOutputs().size()+1)
+                            , gate2.getY() + (connectorID + 1) * DEFAULT_GATE_HEIGHT / (gate2.getOutputs().size() + 1)
                     );
                 }
             }
+        }
     }
 
     /**
@@ -62,12 +67,17 @@ public class Panel extends JPanel implements Observer {
                         , (i+1)*DEFAULT_GATE_HEIGHT/(gate.getInputs().size()+1) + gate.getY() - DEFAULT_CONNECT_RADIUS/2
                         , DEFAULT_CONNECT_RADIUS
                         , DEFAULT_CONNECT_RADIUS);
-            g.setColor(new Color(171, 83, 83));
-            for (int i=0; i<gate.getOutputs().size(); i++)
-                g.fillOval(gate.getX() + DEFAULT_GATE_WIDTH - DEFAULT_CONNECT_RADIUS/2
-                        , (i+1)*DEFAULT_GATE_HEIGHT/(gate.getOutputs().size()+1) + gate.getY() - DEFAULT_CONNECT_RADIUS/2
+            for (int i=0; i<gate.getOutputs().size(); i++) {
+                if (gate.getSelected() && gate.getSelectedID() == i) {
+                    g.setColor(new Color(241, 8, 103));
+                } else {
+                    g.setColor(new Color(171, 83, 83));
+                }
+                g.fillOval(gate.getX() + DEFAULT_GATE_WIDTH - DEFAULT_CONNECT_RADIUS / 2
+                        , (i + 1) * DEFAULT_GATE_HEIGHT / (gate.getOutputs().size() + 1) + gate.getY() - DEFAULT_CONNECT_RADIUS / 2
                         , DEFAULT_CONNECT_RADIUS
                         , DEFAULT_CONNECT_RADIUS);
+            }
         }
     }
 

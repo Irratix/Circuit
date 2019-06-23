@@ -21,25 +21,31 @@ public class ConnectAction extends JPanel implements MouseListener, MouseMotionL
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        /*if (SwingUtilities.isLeftMouseButton(e)) {
+        if (SwingUtilities.isLeftMouseButton(e)) {
             Gate tmpOutput = this.circuit.findOutputAt(e.getX(), e.getY());
             if (tmpOutput != null) {
+                //set selected connector
+                if (this.output != null)
+                    this.output.setSelected(false);
                 this.output = tmpOutput;
                 this.outputID = this.output.findOutputID(e.getX(), e.getY());
-                this.output.setSelected(true);
+                this.output.setSelected(true, this.outputID);
             } else {
                 if (this.output != null) {
                     Gate input = this.circuit.findInputAt(e.getX(), e.getY());
                     if (input != null) {
+                        //connect gates
                         int inputID = input.findInputID(e.getX(), e.getY());
-                        this.output.connectFromComplete(input, this.outputID, inputID);
+                        if (this.output.canConnectTo(input))
+                            this.output.connectToComplete(input, this.outputID, inputID);
                     } else {
+                        //deselect all gates
                         this.output.setSelected(false);
                         this.output = null;
                     }
                 }
             }
-        }*/
+        }
         this.circuit.update();
     }
 

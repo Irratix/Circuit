@@ -7,7 +7,7 @@ public class Source extends Gate {
     private boolean state;
 
     public Source() {
-        this.state = false;
+        this.state = true;
         setInputAmt(0);
         setOutputAmt(1);
     }

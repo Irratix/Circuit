@@ -11,6 +11,7 @@ public class Gate {
     protected ArrayList<Connector> outputs;
     private Point coords;
     private boolean selected;
+    private int selectedID;
 
     private static final int INIT_X = 10;
     private static final int INIT_Y = 10;
@@ -157,6 +158,15 @@ public class Gate {
      * changes selection state of this gate
      * @param select
      */
+    public void setSelected(boolean select, int n) {
+        this.selected = select;
+        this.selectedID = n;
+    }
+
+    /**
+     * changes selection state of this gate
+     * @param select
+     */
     public void setSelected(boolean select) {
         this.selected = select;
     }
@@ -167,5 +177,65 @@ public class Gate {
      */
     public boolean getSelected() {
         return this.selected;
+    }
+
+    /**
+     * return the ID of the selected output
+     * @return
+     */
+    public int getSelectedID() {
+        return this.selectedID;
+    }
+
+    /**
+     * find the index of the output at certain coordinates
+     * @param x
+     * @param y
+     * @return
+     */
+    public int findOutputID(int x, int y) {
+        Point coords = new Point(x, y);
+        for (int i=0; i<this.getOutputs().size(); i++) {
+            Point outputCoords = new Point(
+                    this.getX() + Panel.DEFAULT_GATE_WIDTH,
+                    this.getY() + (i+1)*Panel.DEFAULT_GATE_HEIGHT/(this.getOutputs().size()+1));
+            if (coords.distance(outputCoords) < Panel.DEFAULT_CONNECT_RADIUS)
+                return i;
+        }
+        return -1;
+    }
+
+    /**
+     * find the index of the input at certain coordinates
+     * @param x
+     * @param y
+     * @return
+     */
+    public int findInputID(int x, int y) {
+        Point coords = new Point(x, y);
+        for (int i=0; i<this.getInputs().size(); i++) {
+            Point inputCoords = new Point(
+                    this.getX(),
+                    this.getY() + (i+1)*Panel.DEFAULT_GATE_HEIGHT/(this.getInputs().size()+1));
+            if (coords.distance(inputCoords) < Panel.DEFAULT_CONNECT_RADIUS)
+                return i;
+        }
+        return -1;
+    }
+
+    /**
+     * returns whether or not a node can connect to another node
+     * specifically to avoid infinite loops
+     * @param gate
+     * @return
+     */
+    public boolean canConnectTo(Gate gate) {
+        if (this == gate)
+            return false;
+        for (Gate input : this.getInputs()) {
+            if (input == gate || !input.canConnectTo(gate))
+                return false;
+        }
+        return true;
     }
 }

@@ -1,7 +1,9 @@
 package model;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Observable;
+import view.Panel;
 
 public class Circuit extends Observable {
 
@@ -47,5 +49,45 @@ public class Circuit extends Observable {
     public void update() {
         setChanged();
         notifyObservers();
+    }
+
+    /**
+     * find which gate has an output at inserted coordinates
+     * @param x
+     * @param y
+     * @return
+     */
+    public Gate findOutputAt(int x, int y) {
+        Point coords = new Point(x, y);
+        for (Gate gate : this.gates) {
+            for (int i=0; i<gate.getOutputs().size(); i++) {
+                Point outputCoords = new Point(
+                        gate.getX() + Panel.DEFAULT_GATE_WIDTH,
+                        gate.getY() + (i+1)*Panel.DEFAULT_GATE_HEIGHT/(gate.getOutputs().size()+1));
+                if (coords.distance(outputCoords) < Panel.DEFAULT_CONNECT_RADIUS)
+                    return gate;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * find which gate has an input at inserted coordinates
+     * @param x
+     * @param y
+     * @return
+     */
+    public Gate findInputAt(int x, int y) {
+        Point coords = new Point(x, y);
+        for (Gate gate : this.gates) {
+            for (int i=0; i<gate.getInputs().size(); i++) {
+                Point inputCoords = new Point(
+                        gate.getX(),
+                        gate.getY() + (i+1)*Panel.DEFAULT_GATE_HEIGHT/(gate.getInputs().size()+1));
+                if (coords.distance(inputCoords) < Panel.DEFAULT_CONNECT_RADIUS)
+                    return gate;
+            }
+        }
+        return null;
     }
 }
