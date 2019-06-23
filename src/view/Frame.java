@@ -11,8 +11,8 @@ import java.awt.*;
 
 public class Frame extends JFrame {
 
-    private static final int WIDTH = 1100;
-    private static final int HEIGHT = 600;
+    private static final int WIDTH = 1920;
+    private static final int HEIGHT = 1080;
 
     public Frame(String title, Circuit circuit) {
         super(title);

@@ -100,6 +100,7 @@ public class Circuit extends Observable {
     public void selectGate(Gate gate) {
         this.selection = gate;
         gate.setAsSelected(true);
+        update();
     }
 
     /**
@@ -108,6 +109,7 @@ public class Circuit extends Observable {
     public void removeSelection() {
         this.selection.setAsSelected(false);
         this.selection = null;
+        update();
     }
 
     /**
@@ -116,8 +118,9 @@ public class Circuit extends Observable {
     public void deleteSelected() {
         if (this.selection != null) {
             for (Gate gate : this.selection.getInputs())
-                for (Connector connector : gate.getOutputs())
-                    connector.removeGate(this.selection);
+                if (gate != null)
+                    for (Connector connector : gate.getOutputs())
+                        connector.removeGate(this.selection);
             for (Connector connector : this.selection.getOutputs())
                 for (Gate gate : connector.connections())
                     gate.removeInput(this.selection);
