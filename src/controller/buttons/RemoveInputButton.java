@@ -2,6 +2,7 @@ package controller.buttons;
 
 import controller.actions.AddChipAction;
 import controller.actions.RemoveInputAction;
+import model.ChipCircuit;
 import model.Circuit;
 
 import javax.swing.*;
@@ -9,7 +10,7 @@ import java.awt.event.KeyEvent;
 
 public class RemoveInputButton extends JButton {
 
-    public RemoveInputButton(Circuit circuit) {
+    public RemoveInputButton(ChipCircuit circuit) {
         super(new RemoveInputAction(circuit));
         setButtonProperties();
     }

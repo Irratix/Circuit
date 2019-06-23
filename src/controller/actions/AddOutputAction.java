@@ -1,5 +1,6 @@
 package controller.actions;
 
+import model.ChipCircuit;
 import model.Circuit;
 import model.Gates.AND;
 import model.Gates.Source;
@@ -9,9 +10,9 @@ import java.awt.event.ActionEvent;
 
 public class AddOutputAction extends AbstractAction {
 
-    private Circuit circuit;
+    private ChipCircuit circuit;
 
-    public AddOutputAction(Circuit circuit) {
+    public AddOutputAction(ChipCircuit circuit) {
         super("Add Output");
         this.circuit = circuit;
         setEnabled(true);

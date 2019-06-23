@@ -3,24 +3,17 @@ package model;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Observable;
-import java.util.Observer;
 
-import model.Gates.Chip;
 import view.Panel;
 
-public class Circuit extends Observable implements Observer {
+public class Circuit extends Observable {
 
     private ArrayList<Gate> gates;
     private Gate selection;
 
-    private ArrayList<Gate> inputs;
-    private ArrayList<Connector> outputs;
-
     public Circuit() {
         this.gates = new ArrayList<>();
         this.selection = null;
-        this.inputs = new ArrayList<>();
-        this.outputs = new ArrayList<>();
     }
 
     /**
@@ -37,8 +30,6 @@ public class Circuit extends Observable implements Observer {
      */
     public void addGate(Gate gate) {
         this.gates.add(gate);
-        if (gate instanceof Chip)
-            gate.addObserver(this);
         update();
     }
 
@@ -139,60 +130,6 @@ public class Circuit extends Observable implements Observer {
             this.gates.remove(this.selection);
             this.selection = null;
         }
-        update();
-    }
-
-    /**
-     * return this circuit's inputs
-     * @return
-     */
-    public ArrayList<Gate> getInputs() {
-        return (ArrayList<Gate>) this.inputs.clone();
-    }
-
-    /**
-     * return this circuit's outputs
-     * @return
-     */
-    public ArrayList<Connector> getOutputs() {
-        return (ArrayList<Connector>) this.outputs.clone();
-    }
-
-    /**
-     * add a new input to the circuit
-     */
-    public void addInput() {
-        this.inputs.add(null);
-        update();
-    }
-
-    /**
-     * remove the last input
-     */
-    public void removeInput() {
-        Gate gate = this.inputs.get(this.inputs.size()-1);
-        this.inputs.remove(gate);
-        update();
-    }
-
-    /**
-     * remove last output of the circuit
-     */
-    public void addOutput() {
-        this.outputs.add(new Connector());
-        update();
-    }
-
-    /**
-     * add a new input to the circuit
-     */
-    public void removeOutput() {
-        this.outputs.remove(this.outputs.get(this.outputs.size()-1));
-        update();
-    }
-
-    @Override
-    public void update(Observable o, Object arg) {
         update();
     }
 }

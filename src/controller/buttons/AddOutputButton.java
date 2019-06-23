@@ -2,6 +2,7 @@ package controller.buttons;
 
 import controller.actions.AddChipAction;
 import controller.actions.AddOutputAction;
+import model.ChipCircuit;
 import model.Circuit;
 
 import javax.swing.*;
@@ -9,7 +10,7 @@ import java.awt.event.KeyEvent;
 
 public class AddOutputButton extends JButton {
 
-    public AddOutputButton(Circuit circuit) {
+    public AddOutputButton(ChipCircuit circuit) {
         super(new AddOutputAction(circuit));
         setButtonProperties();
     }

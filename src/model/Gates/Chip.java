@@ -1,5 +1,6 @@
 package model.Gates;
 
+import model.ChipCircuit;
 import model.Circuit;
 import model.Gate;
 
@@ -8,16 +9,16 @@ import java.util.Observer;
 
 public class Chip extends Gate implements Observer {
 
-    private Circuit circuit;
+    private ChipCircuit circuit;
 
     public Chip() {
-        this.circuit = new Circuit();
+        this.circuit = new ChipCircuit();
         this.circuit.addObserver(this);
         setInputAmt(0);
         setOutputAmt(0);
     }
 
-    public Circuit getCircuit() {
+    public ChipCircuit getCircuit() {
         return this.circuit;
     }
 
