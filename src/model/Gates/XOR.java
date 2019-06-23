@@ -10,7 +10,7 @@ public class XOR extends Gate {
     }
 
     /**
-     * returns the state of the OR-gate
+     * returns the state of the XOR-gate
      * @return
      */
     public boolean evaluate() {

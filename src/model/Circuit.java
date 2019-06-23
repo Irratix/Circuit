@@ -123,7 +123,9 @@ public class Circuit extends Observable {
                         connector.removeGate(this.selection);
             for (Connector connector : this.selection.getOutputs())
                 for (Gate gate : connector.connections())
-                    gate.removeInput(this.selection);
+                    if (gate != null) {
+                        gate.removeInput(this.selection);
+                    }
             this.gates.remove(this.selection);
             this.selection = null;
         }
