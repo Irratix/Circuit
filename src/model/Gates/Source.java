@@ -19,4 +19,11 @@ public class Source extends Gate {
     public boolean evaluate() {
         return this.state;
     }
+
+    /**
+     * change the state of this source
+     */
+    public void changeState() {
+        this.state = !this.state;
+    }
 }

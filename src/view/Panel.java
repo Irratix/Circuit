@@ -31,14 +31,15 @@ public class Panel extends JPanel implements Observer {
      */
     private void paintConnections(Graphics g) {
         for (Gate gate1 : this.circuit.getCircuit()) {
-            if (gate1.evaluate()) {
-                g.setColor(new Color(255, 255, 255));
-            } else {
-                g.setColor(new Color(0, 0, 0));
-            }
+
             for (int i = 0; i < gate1.getInputs().size(); i++) {
                 Gate gate2 = gate1.getInputs().get(i);
                 if (gate2 != null) {
+                    if (gate2.evaluate()) {
+                        g.setColor(new Color(255, 255, 255));
+                    } else {
+                        g.setColor(new Color(0, 0, 0));
+                    }
                     //get the index of the connector of gate2 which is connected to gate1
                     int connectorID = 0;
                     for (Connector connector : gate2.getOutputs())

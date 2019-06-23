@@ -15,6 +15,6 @@ public class OR extends Gate {
      */
     public boolean evaluate() {
         return this.inputs.get(0).evaluate()
-                || this.inputs.get(0).evaluate();
+                || this.inputs.get(1).evaluate();
     }
 }
