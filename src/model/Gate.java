@@ -233,7 +233,7 @@ public class Gate {
         if (this == gate)
             return false;
         for (Gate input : this.getInputs()) {
-            if (input == gate || !input.canConnectTo(gate))
+            if (input != null && (input == gate || !input.canConnectTo(gate)))
                 return false;
         }
         return true;

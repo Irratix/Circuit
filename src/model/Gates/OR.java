@@ -14,7 +14,12 @@ public class OR extends Gate {
      * @return
      */
     public boolean evaluate() {
-        return this.inputs.get(0).evaluate()
-                || this.inputs.get(1).evaluate();
+        boolean gate1 = false;
+        boolean gate2 = false;
+        if (this.inputs.get(0) != null)
+            gate1 = this.inputs.get(0).evaluate();
+        if (this.inputs.get(1) != null)
+            gate2 = this.inputs.get(1).evaluate();
+        return gate1 || gate2;
     }
 }

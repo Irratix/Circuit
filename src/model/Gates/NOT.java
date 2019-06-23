@@ -14,6 +14,8 @@ public class NOT extends Gate {
      * @return
      */
     public boolean evaluate() {
+        if (this.inputs.get(0) == null)
+            return false;
         return !this.inputs.get(0).evaluate();
     }
 }

@@ -14,6 +14,9 @@ public class AND extends Gate {
      * @return
      */
     public boolean evaluate() {
+        for (Gate gate : this.inputs)
+            if (gate == null)
+                return false;
         return this.inputs.get(0).evaluate()
                 && this.inputs.get(1).evaluate();
     }

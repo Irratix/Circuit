@@ -9,7 +9,7 @@ public class Main {
         Circuit circuit = new Circuit();
 
         //just some testing data
-        Source gate1 = new Source();
+        /*Source gate1 = new Source();
         gate1.setCoords(100, 100);
         Source gate2 = new Source();
         gate2.setCoords(150, 400);
@@ -24,7 +24,7 @@ public class Main {
         circuit.addGate(gate1);
         circuit.addGate(gate2);
         circuit.addGate(gate3);
-        circuit.addGate(gate4);
+        circuit.addGate(gate4);*/
 
         Frame frame = new Frame("Circuit", circuit);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
