@@ -2,7 +2,9 @@ package controller;
 
 import model.Circuit;
 import model.Gate;
+import model.Gates.Chip;
 import model.Gates.Source;
+import view.Frame;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
@@ -20,9 +22,14 @@ public class GateInteraction extends JPanel implements MouseListener {
     public void mouseClicked(MouseEvent e) {
         if (SwingUtilities.isLeftMouseButton(e)) {
             Gate gate = this.circuit.findGateAt(e.getX(), e.getY());
-            if (gate != null && gate instanceof Source) {
-                 Source source = (Source) gate;
-                 source.changeState();
+            if (gate != null) {
+                if (gate instanceof Source) {
+                    Source source = (Source) gate;
+                    source.changeState();
+                } else if (gate instanceof Chip) {
+                    Chip chip = (Chip) gate;
+                    Frame frame = new Frame("Chip", chip.getCircuit());
+                }
             }
             this.circuit.update();
         }

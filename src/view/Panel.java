@@ -16,9 +16,9 @@ public class Panel extends JPanel implements Observer {
 
     private Circuit circuit;
 
-    public static final int DEFAULT_GATE_WIDTH = 100;
-    public static final int DEFAULT_GATE_HEIGHT = 100;
-    public static final int DEFAULT_CONNECT_RADIUS = 15;
+    public static final int DEFAULT_GATE_WIDTH = 75;
+    public static final int DEFAULT_GATE_HEIGHT = 75;
+    public static final int DEFAULT_CONNECT_RADIUS = 12;
 
     public Panel(Circuit circuit) {
         this.circuit = circuit;

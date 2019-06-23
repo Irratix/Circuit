@@ -26,6 +26,8 @@ abstract public class GetGateTexture {
             fileName = "src/Resources/GateTextures/OR.png";
         } else if (gate instanceof XOR) {
             fileName = "src/Resources/GateTextures/XOR.png";
+        } else if (gate instanceof Chip) {
+            fileName = "src/Resources/GateTextures/Chip.png";
         }
         try {
             File imgFile = new File(fileName);

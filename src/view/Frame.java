@@ -11,8 +11,8 @@ import java.awt.*;
 
 public class Frame extends JFrame {
 
-    private static final int WIDTH = 1920;
-    private static final int HEIGHT = 1080;
+    private static final int WIDTH = 1920/2;
+    private static final int HEIGHT = 1080/2;
 
     public Frame(String title, Circuit circuit) {
         super(title);
@@ -30,7 +30,7 @@ public class Frame extends JFrame {
 
         setJMenuBar(new TaskBar(circuit));
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
-        setResizable(false);
+        setResizable(true);
         pack();
         setVisible(true);
 
