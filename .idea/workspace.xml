@@ -1,7 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee220e19-17d4-426f-b015-6a5cbe4071ec" name="Default" comment="" />
+    <list default="true" id="ee220e19-17d4-426f-b015-6a5cbe4071ec" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/AND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/NOT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/OR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Source.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/XOR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/AND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/NOT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/OR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Source.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/XOR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/ConnectAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/GateDragger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/GateInteraction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/TaskBar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddANDAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddChipAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddInputAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddLightAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddNOTAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddORAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddOutputAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddSourceAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddXORAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/DeleteGateAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/RemoveInputAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/RemoveOutputAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddANDButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddChipButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddInputButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddLightButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddNOTButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddORButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddOutputButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddSourceButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddXORButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/DeleteGateButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/RemoveInputButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/RemoveOutputButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/ChipCircuit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Circuit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Connector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/AND.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/Chip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/Light.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/NOT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/OR.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/Source.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/XOR.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/view/Frame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/view/GetGateTexture.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Circuit/view/Panel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/AND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/Chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/Light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/NOT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/OR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/Source.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/XOR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ConnectAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/GateDragger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/GateInteraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/TaskBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddANDAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddChipAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddInputAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddLightAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddNOTAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddORAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddOutputAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddSourceAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddXORAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/DeleteGateAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddANDButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddChipButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddInputButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddLightButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddORButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddOutputButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddXORButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/DeleteGateButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/RemoveInputButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/buttons/RemoveOutputButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ChipCircuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/AND.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/Buffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/Chip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/NOT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/OR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/Source.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Gates/XOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/GetGateTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circuit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Circuit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Circuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Panel.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,50 +125,113 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Gate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Gate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3451">
+              <caret line="233" column="39" selection-start-line="233" selection-start-column="39" selection-end-line="233" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buffer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Gates/Buffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+              <folding>
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveOutputAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChipCircuit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetGateTexture.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/GetGateTexture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ConnectAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Circuit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Panel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Panel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="524">
+              <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Gates/Chip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -74,9 +251,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/Chip.java" />
+        <option value="$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java" />
+        <option value="$PROJECT_DIR$/src/controller/actions/AddSourceAction.java" />
+        <option value="$PROJECT_DIR$/src/controller/GateDragger.java" />
+        <option value="$PROJECT_DIR$/src/model/Gate.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/Source.java" />
         <option value="$PROJECT_DIR$/src/view/Frame.java" />
+        <option value="$PROJECT_DIR$/src/controller/GateInteraction.java" />
+        <option value="$PROJECT_DIR$/src/controller/actions/AddANDAction.java" />
+        <option value="$PROJECT_DIR$/src/controller/buttons/AddANDButton.java" />
+        <option value="$PROJECT_DIR$/src/controller/actions/AddLightAction.java" />
+        <option value="$PROJECT_DIR$/src/controller/actions/AddNOTAction.java" />
+        <option value="$PROJECT_DIR$/src/controller/actions/AddORAction.java" />
+        <option value="$PROJECT_DIR$/src/controller/buttons/AddLightButton.java" />
+        <option value="$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java" />
+        <option value="$PROJECT_DIR$/src/controller/buttons/AddORButton.java" />
+        <option value="$PROJECT_DIR$/src/controller/TaskBar.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/Light.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/AND.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/NOT.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/OR.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/model/Circuit.java" />
+        <option value="$PROJECT_DIR$/src/model/Gates/Buffer.java" />
+        <option value="$PROJECT_DIR$/src/model/Connector.java" />
+        <option value="$PROJECT_DIR$/src/controller/ConnectAction.java" />
         <option value="$PROJECT_DIR$/src/view/Panel.java" />
+        <option value="$PROJECT_DIR$/src/view/GetGateTexture.java" />
       </list>
     </option>
   </component>
@@ -91,9 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,7 +303,18 @@
             <path>
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuit" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
@@ -116,19 +326,34 @@
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Gates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/OOPAI/2019_Team_67/graphEditor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mailv\Desktop\Programming\Java\Circuit\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -143,6 +368,11 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Circuit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -184,6 +414,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -199,51 +434,107 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32960895" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22905028" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33931035" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/GateInteraction.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddInputAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddChipAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddANDAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15402">
+          <caret line="906" column="10" selection-start-line="906" selection-start-column="10" selection-end-line="906" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        <state relative-caret-position="85">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ConnectAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -252,22 +543,323 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="323">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddSourceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/GateDragger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="833">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/GateDragger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5780">
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/GateInteraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddSourceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddANDAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddANDButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddLightAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddNOTAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/AddORAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddLightButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/buttons/AddORButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/TaskBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/OR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/Source.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/NOT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Buffer.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/AND.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding>
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3451">
+          <caret line="233" column="39" selection-start-line="233" selection-start-column="39" selection-end-line="233" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ConnectAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gates/Chip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/GetGateTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
