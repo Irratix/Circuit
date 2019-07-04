@@ -44,6 +44,33 @@ abstract public class GetGateTexture {
         return texture;
     }
 
+    public static BufferedImage getGlowTexture(Gate gate) {
+        BufferedImage texture = null;
+        String fileName = null;
+        if (gate instanceof AND) {
+            fileName = "src/Resources/GateTextures/GLOW_AND.png";
+        } else if (gate instanceof Light) {
+            fileName = "src/Resources/GateTextures/GLOW_WHITE.png";
+        } else if (gate instanceof NOT) {
+            fileName = "src/Resources/GateTextures/GLOW_NOT.png";
+        } else if (gate instanceof OR) {
+            fileName = "src/Resources/GateTextures/GLOW_OR.png";
+        } else if (gate instanceof XOR) {
+            fileName = "src/Resources/GateTextures/GLOW_XOR.png";
+        } else if (gate instanceof Chip) {
+            fileName = "src/Resources/GateTextures/GLOW_CIRCUIT.png";
+        } else if (gate instanceof Source) {
+            fileName = "src/Resources/GateTextures/GLOW_WHITE.png";
+        }
+        try {
+            File imgFile = new File(fileName);
+            texture = ImageIO.read(imgFile);
+        } catch (IOException ioe) {
+            System.err.println("Could not load " + fileName);
+        }
+        return texture;
+    }
+
     public static BufferedImage replaceColor(BufferedImage img, Color initial, Color replacement) {
         WritableRaster raster = img.getRaster();
         for (int xx = 0; xx < raster.getWidth(); xx++) {

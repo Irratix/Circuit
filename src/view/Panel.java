@@ -95,18 +95,8 @@ public class Panel extends JPanel implements Observer {
             //if the gate evaluates to false, change the color of the gate
             if (gate.isSelected()) {
                 GetGateTexture.makeRed(img);
-                //g.setColor(new Color(255, 0, 0));
-                //g.drawOval(
-                //        gate.getX() - 17
-                //        , gate.getY() - 17
-                //        ,DEFAULT_GATE_WIDTH + 34
-                //        ,DEFAULT_GATE_HEIGHT + 34
                 //);
             } else if (!gate.evaluate()) {
-                //GetGateTexture.replaceColor(
-                //        img
-                //        , new Color(255, 255, 255)
-                //        , new Color(87, 93, 171));
                 GetGateTexture.makeDarker(img);
             }
             g.drawImage(img
@@ -115,6 +105,17 @@ public class Panel extends JPanel implements Observer {
                     , DEFAULT_GATE_WIDTH
                     , DEFAULT_GATE_HEIGHT
                     , this);
+            if (gate.evaluate()) {
+                img = GetGateTexture.getGlowTexture(gate);
+                if (gate.isSelected())
+                    GetGateTexture.makeRed(img);
+                g.drawImage(img
+                        , gate.getX() - DEFAULT_GATE_WIDTH/2
+                        , gate.getY() - DEFAULT_GATE_HEIGHT/2
+                        , DEFAULT_GATE_WIDTH*2
+                        , DEFAULT_GATE_HEIGHT*2
+                        , this);
+            }
         }
     }
 
