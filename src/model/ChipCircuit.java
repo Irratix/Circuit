@@ -26,16 +26,18 @@ public class ChipCircuit extends Circuit {
      * remove the last input
      */
     public void removeInput() {
-        Gate gate = this.inputs.get(this.inputs.size()-1);
-        for (Connector connector : gate.getOutputs())
-            for (Gate chip : connector.connections())
-                if (chip instanceof Chip) {
-                    Chip curChip = (Chip) chip;
-                    if (curChip.contains(this))
-                        connector.removeGate(chip);
-                }
-        this.inputs.remove(gate);
-        update();
+        if (this.inputs.size() > 0) {
+            Gate gate = this.inputs.get(this.inputs.size() - 1);
+            for (Connector connector : gate.getOutputs())
+                for (Gate chip : connector.connections())
+                    if (chip instanceof Chip) {
+                        Chip curChip = (Chip) chip;
+                        if (curChip.contains(this))
+                            connector.removeGate(chip);
+                    }
+            this.inputs.remove(gate);
+            update();
+        }
     }
 
     /**
@@ -52,7 +54,9 @@ public class ChipCircuit extends Circuit {
     public void removeOutput() {
         Connector connector = this.outputs.get(this.outputs.size()-1);
         for (Gate gate : connector.connections())
-            gate.getInputs().removeIf(gates -> gates instanceof Chip && ((Chip)gates).contains(this));
+            for (Gate chip : gate.getInputs())
+                if (chip instanceof Chip && ((Chip) chip).contains(this))
+                    gate.removeInput(chip);
         this.outputs.remove(connector);
         update();
     }

@@ -2,119 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee220e19-17d4-426f-b015-6a5cbe4071ec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/AND.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/NOT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/OR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Source.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/GateTextures/XOR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/AND.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/NOT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/OR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Source.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/XOR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/ConnectAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/GateDragger.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/GateInteraction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/TaskBar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddANDAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddChipAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddInputAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddLightAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddNOTAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddORAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddOutputAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddSourceAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/AddXORAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/DeleteGateAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/RemoveInputAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/actions/RemoveOutputAction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddANDButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddChipButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddInputButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddLightButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddNOTButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddORButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddOutputButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddSourceButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/AddXORButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/DeleteGateButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/RemoveInputButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/controller/buttons/RemoveOutputButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/ChipCircuit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Circuit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Connector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/AND.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/Chip.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/Light.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/NOT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/OR.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/Source.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/model/Gates/XOR.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/view/Frame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/view/GetGateTexture.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Circuit/view/Panel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/AND.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/Chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/NOT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/OR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/Source.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/GateTextures/XOR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ConnectAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/GateDragger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/GateInteraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/TaskBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddANDAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddChipAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddInputAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddLightAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddNOTAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddORAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddOutputAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddSourceAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/AddXORAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/DeleteGateAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/RemoveInputAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/actions/RemoveOutputAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddANDButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddChipButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddInputButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddLightButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddNOTButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddORButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddOutputButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddSourceButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/AddXORButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/DeleteGateButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/RemoveInputButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/buttons/RemoveOutputButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ChipCircuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/AND.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/Buffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/Chip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/NOT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/OR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/Source.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gates/XOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/GetGateTexture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circuit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Circuit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Circuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Circuit/GateTextures/Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Circuit/Resources/GateTextures/Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ChipCircuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ChipCircuit.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,7 +19,7 @@
       <file leaf-file-name="Gate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Gate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3451">
+            <state relative-caret-position="581">
               <caret line="233" column="39" selection-start-line="233" selection-start-column="39" selection-end-line="233" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -176,16 +66,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChipCircuit.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChipCircuit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+              <folding>
+                <element signature="e#1765#1766#0" expanded="true" />
+                <element signature="e#1799#1800#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1950#1951#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetGateTexture.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GetGateTexture.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/GetGateTexture.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -279,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/controller/ConnectAction.java" />
         <option value="$PROJECT_DIR$/src/view/Panel.java" />
         <option value="$PROJECT_DIR$/src/view/GetGateTexture.java" />
+        <option value="$PROJECT_DIR$/src/model/ChipCircuit.java" />
       </list>
     </option>
   </component>
@@ -315,6 +212,13 @@
               <item name="Circuit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circuit" type="b2602c69:ProjectViewProjectNode" />
@@ -445,7 +349,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22905028" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16424581" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -583,6 +487,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,6 +525,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -795,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Connector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -809,16 +712,6 @@
           <folding>
             <element signature="e#1109#1110#0" expanded="true" />
             <element signature="e#1137#1138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Gate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3451">
-          <caret line="233" column="39" selection-start-line="233" selection-start-column="39" selection-end-line="233" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -860,6 +753,29 @@
           <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Gate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="233" column="39" selection-start-line="233" selection-start-column="39" selection-end-line="233" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ChipCircuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding>
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
           </folding>
         </state>
       </provider>
