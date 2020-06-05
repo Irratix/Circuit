@@ -129,7 +129,7 @@ public class Panel extends JPanel implements Observer {
                         , DEFAULT_CONNECT_RADIUS
                         , DEFAULT_CONNECT_RADIUS);
             for (int i=0; i<gate.getOutputs().size(); i++) {
-                if (gate.getSelected() && gate.getSelectedID() == i) {
+                if (gate.isFocused() && gate.getSelectedConnector() == i) {
                     g.setColor(new Color(241, 8, 103));
                 } else {
                     g.setColor(new Color(171, 83, 83));

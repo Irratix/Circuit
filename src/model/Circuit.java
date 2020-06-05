@@ -100,7 +100,7 @@ public class Circuit extends Observable {
      */
     public void selectGate(Gate gate) {
         this.selection = gate;
-        gate.setAsSelected(true);
+        gate.setSelected(true);
         update();
     }
 
@@ -109,7 +109,7 @@ public class Circuit extends Observable {
      */
     public void removeSelection() {
         if (this.selection != null)
-            this.selection.setAsSelected(false);
+            this.selection.setSelected(false);
         this.selection = null;
         update();
     }

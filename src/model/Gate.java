@@ -11,19 +11,19 @@ public class Gate extends Observable {
     protected ArrayList<Gate> inputs;
     protected ArrayList<Connector> outputs;
     private Point coords;
-    private boolean selected;
-    private int selectedID;
+    private boolean focused;
+    private int selectedConnector;
     private boolean isSelected;
 
-    private static final int INIT_X = 10;
-    private static final int INIT_Y = 10;
+    private static final int INIT_X = Frame.WIDTH/2;
+    private static final int INIT_Y = Frame.HEIGHT/2;
 
     public Gate() {
         this.inputs = new ArrayList<>();
         this.outputs = new ArrayList<>();
         this.coords = new Point();
         setCoords(INIT_X, INIT_Y);
-        this.selected = false;
+        this.focused = false;
         this.isSelected = false;
     }
 
@@ -158,12 +158,20 @@ public class Gate extends Observable {
     }
 
     /**
-     * changes selection state of this gate
-     * @param select
+     * changes focus state of this gate
+     * @param focused
      */
-    public void setSelected(boolean select, int n) {
-        this.selected = select;
-        this.selectedID = n;
+    public void setFocused(boolean focused, int n) {
+        this.focused = focused;
+        this.selectedConnector = n;
+    }
+
+    /**
+     * changes focus state of this gate
+     * @param focused
+     */
+    public void setFocused(boolean focused) {
+        this.focused = focused;
     }
 
     /**
@@ -171,14 +179,6 @@ public class Gate extends Observable {
      * @param select
      */
     public void setSelected(boolean select) {
-        this.selected = select;
-    }
-
-    /**
-     * set this gate itself as selected
-     * @param select
-     */
-    public void setAsSelected(boolean select) {
         this.isSelected = select;
     }
 
@@ -191,19 +191,19 @@ public class Gate extends Observable {
     }
 
     /**
-     * determines whether or not this gate is selected
+     * determines whether or not this gate is focused
      * @return
      */
-    public boolean getSelected() {
-        return this.selected;
+    public boolean isFocused() {
+        return this.focused;
     }
 
     /**
-     * return the ID of the selected output
+     * return the ID of the selected output connector
      * @return
      */
-    public int getSelectedID() {
-        return this.selectedID;
+    public int getSelectedConnector() {
+        return this.selectedConnector;
     }
 
     /**
