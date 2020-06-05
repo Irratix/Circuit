@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee220e19-17d4-426f-b015-6a5cbe4071ec" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controller/GateInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GateInteraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Circuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Panel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Circuit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -88,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
+            <state relative-caret-position="360">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7789#7790#0" expanded="true" />
@@ -175,10 +174,10 @@
         <option value="$PROJECT_DIR$/src/model/ChipCircuit.java" />
         <option value="$PROJECT_DIR$/src/view/GetGateTexture.java" />
         <option value="$PROJECT_DIR$/src/controller/ConnectAction.java" />
-        <option value="$PROJECT_DIR$/src/view/Panel.java" />
         <option value="$PROJECT_DIR$/src/model/Gate.java" />
         <option value="$PROJECT_DIR$/src/controller/GateInteraction.java" />
         <option value="$PROJECT_DIR$/src/model/Circuit.java" />
+        <option value="$PROJECT_DIR$/src/view/Panel.java" />
       </list>
     </option>
   </component>
@@ -325,7 +324,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1039" y="0" width="1528" height="1087" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22343324" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -337,7 +335,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29874215" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3385744" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3385744" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -607,18 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7789#7790#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/GateInteraction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -656,6 +642,18 @@
           <folding>
             <element signature="e#2582#2583#0" expanded="true" />
             <element signature="e#2600#2601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7789#7790#0" expanded="true" />
+            <element signature="e#7814#7815#0" expanded="true" />
           </folding>
         </state>
       </provider>
