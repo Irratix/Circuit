@@ -43,7 +43,7 @@ public class GateInteraction extends JPanel implements MouseListener {
             if (gate != null && gate.isSelected() == false) {
                 this.circuit.selectGate(gate);
             } else {
-                this.circuit.removeSelection();
+                this.circuit.unselectGate(gate);
             }
         }
     }

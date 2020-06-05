@@ -9,11 +9,11 @@ import view.Panel;
 public class Circuit extends Observable {
 
     private ArrayList<Gate> gates;
-    private Gate selection;
+    private ArrayList<Gate> toBeDeleted;
 
     public Circuit() {
         this.gates = new ArrayList<>();
-        this.selection = null;
+        this.toBeDeleted = new ArrayList<>();
     }
 
     /**
@@ -99,38 +99,41 @@ public class Circuit extends Observable {
      * @param gate
      */
     public void selectGate(Gate gate) {
-        this.selection = gate;
         gate.setSelected(true);
         update();
     }
 
-    /**
-     * remove selection
-     */
-    public void removeSelection() {
-        if (this.selection != null)
-            this.selection.setSelected(false);
-        this.selection = null;
+    public void unselectGate(Gate gate) {
+        gate.setSelected(false);
+    }
+
+    public void deleteSelected() {
+        for (Gate gate : this.gates) {
+            if (gate.isSelected()) {
+                this.toBeDeleted.add(gate);
+            }
+        }
+        for (Gate gate : this.toBeDeleted) {
+            deleteGate(gate);
+        }
+        this.toBeDeleted = null;
         update();
     }
 
     /**
      * deletes the selected gate from the circuit
      */
-    public void deleteSelected() {
-        if (this.selection != null) {
-            for (Gate gate : this.selection.getInputs())
-                if (gate != null)
-                    for (Connector connector : gate.getOutputs())
-                        connector.removeGate(this.selection);
-            for (Connector connector : this.selection.getOutputs())
-                for (Gate gate : connector.connections())
-                    if (gate != null) {
-                        gate.removeInput(this.selection);
-                    }
-            this.gates.remove(this.selection);
-            this.selection = null;
-        }
+    public void deleteGate(Gate gate) {
+        for (Gate input : gate.getInputs())
+            if (input != null)
+                for (Connector connector : input.getOutputs())
+                    connector.removeGate(gate);
+        for (Connector connector : gate.getOutputs())
+            for (Gate output : connector.connections())
+                if (output != null) {
+                    output.removeInput(gate);
+                }
+        this.gates.remove(gate);
         update();
     }
 }
