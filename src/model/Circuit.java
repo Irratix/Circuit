@@ -116,7 +116,7 @@ public class Circuit extends Observable {
         for (Gate gate : this.toBeDeleted) {
             deleteGate(gate);
         }
-        this.toBeDeleted = null;
+        this.toBeDeleted = new ArrayList<>();
         update();
     }
 
