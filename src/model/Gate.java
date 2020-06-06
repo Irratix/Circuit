@@ -2,26 +2,29 @@ package model;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Observable;
 
 import view.Panel;
 
-public class Gate {
+public class Gate extends Observable {
 
     protected ArrayList<Gate> inputs;
     protected ArrayList<Connector> outputs;
     private Point coords;
-    private boolean selected;
-    private int selectedID;
+    private boolean focused;
+    private int selectedConnector;
+    private boolean isSelected;
 
-    private static final int INIT_X = 10;
-    private static final int INIT_Y = 10;
+    private static final int INIT_X = Frame.WIDTH/2;
+    private static final int INIT_Y = Frame.HEIGHT/2;
 
     public Gate() {
         this.inputs = new ArrayList<>();
         this.outputs = new ArrayList<>();
         this.coords = new Point();
         setCoords(INIT_X, INIT_Y);
-        this.selected = false;
+        this.focused = false;
+        this.isSelected = false;
     }
 
     /**
@@ -155,12 +158,20 @@ public class Gate {
     }
 
     /**
-     * changes selection state of this gate
-     * @param select
+     * changes focus state of this gate
+     * @param focused
      */
-    public void setSelected(boolean select, int n) {
-        this.selected = select;
-        this.selectedID = n;
+    public void setFocused(boolean focused, int n) {
+        this.focused = focused;
+        this.selectedConnector = n;
+    }
+
+    /**
+     * changes focus state of this gate
+     * @param focused
+     */
+    public void setFocused(boolean focused) {
+        this.focused = focused;
     }
 
     /**
@@ -168,23 +179,31 @@ public class Gate {
      * @param select
      */
     public void setSelected(boolean select) {
-        this.selected = select;
+        this.isSelected = select;
     }
 
     /**
-     * determines whether or not this gate is selected
+     * return whether or not this gate is selected
      * @return
      */
-    public boolean getSelected() {
-        return this.selected;
+    public boolean isSelected() {
+        return this.isSelected;
     }
 
     /**
-     * return the ID of the selected output
+     * determines whether or not this gate is focused
      * @return
      */
-    public int getSelectedID() {
-        return this.selectedID;
+    public boolean isFocused() {
+        return this.focused;
+    }
+
+    /**
+     * return the ID of the selected output connector
+     * @return
+     */
+    public int getSelectedConnector() {
+        return this.selectedConnector;
     }
 
     /**
@@ -237,5 +256,13 @@ public class Gate {
                 return false;
         }
         return true;
+    }
+
+    /**
+     * removes an input connection
+     * @param gate
+     */
+    public void removeInput(Gate gate) {
+        this.inputs.replaceAll(connection -> connection == gate ? null : connection);
     }
 }

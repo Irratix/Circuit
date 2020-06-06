@@ -1,7 +1,6 @@
 package controller;
 
 import model.Circuit;
-import model.Connector;
 import model.Gate;
 
 import javax.swing.*;
@@ -26,10 +25,10 @@ public class ConnectAction extends JPanel implements MouseListener, MouseMotionL
             if (tmpOutput != null) {
                 //set selected connector
                 if (this.output != null)
-                    this.output.setSelected(false);
+                    this.output.setFocused(false);
                 this.output = tmpOutput;
                 this.outputID = this.output.findOutputID(e.getX(), e.getY());
-                this.output.setSelected(true, this.outputID);
+                this.output.setFocused(true, this.outputID);
             } else {
                 if (this.output != null) {
                     Gate input = this.circuit.findInputAt(e.getX(), e.getY());
@@ -40,10 +39,17 @@ public class ConnectAction extends JPanel implements MouseListener, MouseMotionL
                             this.output.connectToComplete(input, this.outputID, inputID);
                     } else {
                         //deselect all gates
-                        this.output.setSelected(false);
+                        this.output.setFocused(false);
                         this.output = null;
                     }
                 }
+            }
+        }
+        if (SwingUtilities.isRightMouseButton(e)) {
+            Gate input = this.circuit.findInputAt(e.getX(), e.getY());
+            if (input != null) {
+                int inputID = input.findInputID(e.getX(), e.getY());
+                input.removeInput(input.getInputs().get(inputID));
             }
         }
         this.circuit.update();

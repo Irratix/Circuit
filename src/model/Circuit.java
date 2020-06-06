@@ -3,14 +3,17 @@ package model;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Observable;
+
 import view.Panel;
 
 public class Circuit extends Observable {
 
     private ArrayList<Gate> gates;
+    private ArrayList<Gate> toBeDeleted;
 
     public Circuit() {
         this.gates = new ArrayList<>();
+        this.toBeDeleted = new ArrayList<>();
     }
 
     /**
@@ -89,5 +92,48 @@ public class Circuit extends Observable {
             }
         }
         return null;
+    }
+
+    /**
+     * make a gate selected
+     * @param gate
+     */
+    public void selectGate(Gate gate) {
+        gate.setSelected(true);
+        update();
+    }
+
+    public void unselectGate(Gate gate) {
+        gate.setSelected(false);
+    }
+
+    public void deleteSelected() {
+        for (Gate gate : this.gates) {
+            if (gate.isSelected()) {
+                this.toBeDeleted.add(gate);
+            }
+        }
+        for (Gate gate : this.toBeDeleted) {
+            deleteGate(gate);
+        }
+        this.toBeDeleted = new ArrayList<>();
+        update();
+    }
+
+    /**
+     * deletes the selected gate from the circuit
+     */
+    public void deleteGate(Gate gate) {
+        for (Gate input : gate.getInputs())
+            if (input != null)
+                for (Connector connector : input.getOutputs())
+                    connector.removeGate(gate);
+        for (Connector connector : gate.getOutputs())
+            for (Gate output : connector.connections())
+                if (output != null) {
+                    output.removeInput(gate);
+                }
+        this.gates.remove(gate);
+        update();
     }
 }

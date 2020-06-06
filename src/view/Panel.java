@@ -3,12 +3,10 @@ package view;
 import model.Circuit;
 import model.Connector;
 import model.Gate;
-import model.Gates.Light;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.awt.image.WritableRaster;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -16,9 +14,9 @@ public class Panel extends JPanel implements Observer {
 
     private Circuit circuit;
 
-    public static final int DEFAULT_GATE_WIDTH = 100;
-    public static final int DEFAULT_GATE_HEIGHT = 100;
-    public static final int DEFAULT_CONNECT_RADIUS = 15;
+    public static final int DEFAULT_GATE_WIDTH = 64;
+    public static final int DEFAULT_GATE_HEIGHT = 64;
+    public static final int DEFAULT_CONNECT_RADIUS = 12;
 
     public Panel(Circuit circuit) {
         this.circuit = circuit;
@@ -41,19 +39,78 @@ public class Panel extends JPanel implements Observer {
                     if (gate2.evaluate()) {
                         g.setColor(new Color(255, 255, 255));
                     } else {
-                        g.setColor(new Color(0, 0, 0));
+                        g.setColor(new Color(80, 80, 80));
                     }
                     //get the index of the connector of gate2 which is connected to gate1
                     int connectorID = 0;
-                    for (Connector connector : gate2.getOutputs())
+                    for (Connector connector : gate2.getOutputs()) {
                         if (connector.isConnectedTo(gate1))
                             connectorID = gate2.getOutputs().indexOf(connector);
-                    //draw that connection
-                    g.drawLine(gate1.getX()
-                            , gate1.getY() + (i + 1) * DEFAULT_GATE_HEIGHT / (gate1.getInputs().size() + 1)
-                            , gate2.getX() + DEFAULT_GATE_WIDTH
-                            , gate2.getY() + (connectorID + 1) * DEFAULT_GATE_HEIGHT / (gate2.getOutputs().size() + 1)
-                    );
+                    }
+
+                    Graphics2D g2 = (Graphics2D) g;
+                    g2.setStroke(new BasicStroke(2));
+
+                    int connectorBX = gate1.getX();
+                    int connectorBY = gate1.getY() + (i + 1) * DEFAULT_GATE_HEIGHT / (gate1.getInputs().size() + 1);
+                    int connectorAX = gate2.getX() + DEFAULT_GATE_WIDTH;
+                    int connectorAY = gate2.getY() + (connectorID + 1) * DEFAULT_GATE_HEIGHT / (gate2.getOutputs().size() + 1);
+
+                    if (Math.abs(connectorAX-connectorBX) >= Math.abs(connectorAY-connectorBY)) {
+                        //horizontal distance is greater
+                        if (connectorBX < connectorAX) {
+                            //connector B is to the left
+                            g.drawLine(connectorAX
+                                    , connectorAY
+                                    , connectorAX-Math.abs(connectorAY-connectorBY)
+                                    , connectorBY
+                            );
+                            g.drawLine(connectorAX-Math.abs(connectorAY-connectorBY)
+                                    , connectorBY
+                                    , connectorBX
+                                    , connectorBY
+                            );
+                        } else {
+                            //connector B is to the right
+                            g.drawLine(connectorAX
+                                    , connectorAY
+                                    , connectorAX+Math.abs(connectorAY-connectorBY)
+                                    , connectorBY
+                            );
+                            g.drawLine(connectorAX+Math.abs(connectorAY-connectorBY)
+                                    , connectorBY
+                                    , connectorBX
+                                    , connectorBY
+                            );
+                        }
+                    } else {
+                        //vertical distance is greater
+                        if (connectorBY < connectorAY) {
+                            //connector B is above
+                            g.drawLine(connectorAX
+                                    , connectorAY
+                                    , connectorAX
+                                    , connectorBY+Math.abs(connectorAX-connectorBX)
+                            );
+                            g.drawLine(connectorAX
+                                    , connectorBY+Math.abs(connectorAX-connectorBX)
+                                    , connectorBX
+                                    , connectorBY
+                            );
+                        } else {
+                            //connector B is below
+                            g.drawLine(connectorAX
+                                    , connectorAY
+                                    , connectorAX
+                                    , connectorBY-Math.abs(connectorAX-connectorBX)
+                            );
+                            g.drawLine(connectorAX
+                                    , connectorBY-Math.abs(connectorAX-connectorBX)
+                                    , connectorBX
+                                    , connectorBY
+                            );
+                        }
+                    }
                 }
             }
         }
@@ -72,7 +129,7 @@ public class Panel extends JPanel implements Observer {
                         , DEFAULT_CONNECT_RADIUS
                         , DEFAULT_CONNECT_RADIUS);
             for (int i=0; i<gate.getOutputs().size(); i++) {
-                if (gate.getSelected() && gate.getSelectedID() == i) {
+                if (gate.isFocused() && gate.getSelectedConnector() == i) {
                     g.setColor(new Color(241, 8, 103));
                 } else {
                     g.setColor(new Color(171, 83, 83));
@@ -93,11 +150,11 @@ public class Panel extends JPanel implements Observer {
         for (Gate gate : this.circuit.getCircuit()) {
             BufferedImage img = GetGateTexture.getTexture(gate);
             //if the gate evaluates to false, change the color of the gate
-            if (!gate.evaluate()) {
-                GetGateTexture.replaceColor(
-                        img
-                        , new Color(255, 255, 255)
-                        , new Color(87, 93, 171));
+            if (gate.isSelected()) {
+                GetGateTexture.makeRed(img);
+                //);
+            } else if (!gate.evaluate()) {
+                GetGateTexture.makeDarker(img);
             }
             g.drawImage(img
                     , gate.getX()
@@ -105,6 +162,17 @@ public class Panel extends JPanel implements Observer {
                     , DEFAULT_GATE_WIDTH
                     , DEFAULT_GATE_HEIGHT
                     , this);
+            if (gate.evaluate()) {
+                img = GetGateTexture.getGlowTexture(gate);
+                if (gate.isSelected())
+                    GetGateTexture.makeRed(img);
+                g.drawImage(img
+                        , gate.getX() - DEFAULT_GATE_WIDTH/2
+                        , gate.getY() - DEFAULT_GATE_HEIGHT/2
+                        , DEFAULT_GATE_WIDTH*2
+                        , DEFAULT_GATE_HEIGHT*2
+                        , this);
+            }
         }
     }
 
@@ -116,8 +184,8 @@ public class Panel extends JPanel implements Observer {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         paintGates(g);
-        paintConnectors(g);
         paintConnections(g);
+        paintConnectors(g);
     }
 
     /**
