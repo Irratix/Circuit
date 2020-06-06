@@ -6,13 +6,17 @@ import model.Gate;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Panel extends JPanel implements Observer {
+public class Panel extends JPanel implements Observer, MouseMotionListener {
 
     private Circuit circuit;
+    private int mouseX;
+    private int mouseY;
 
     public static final int DEFAULT_GATE_WIDTH = 64;
     public static final int DEFAULT_GATE_HEIGHT = 64;
@@ -24,6 +28,9 @@ public class Panel extends JPanel implements Observer {
         setBackground(new Color(43, 46, 53));
         setVisible(true);
         setOpaque(true);
+
+        this.mouseX = 0;
+        this.mouseY = 0;
     }
 
     /**
@@ -123,11 +130,14 @@ public class Panel extends JPanel implements Observer {
     private void paintConnectors(Graphics g) {
         for (Gate gate : this.circuit.getCircuit()) {
             g.setColor(new Color(70, 171, 67));
+            // INPUTS
             for (int i=0; i<gate.getInputs().size(); i++)
                 g.fillOval(gate.getX() - DEFAULT_CONNECT_RADIUS/2
                         , (i+1)*DEFAULT_GATE_HEIGHT/(gate.getInputs().size()+1) + gate.getY() - DEFAULT_CONNECT_RADIUS/2
                         , DEFAULT_CONNECT_RADIUS
                         , DEFAULT_CONNECT_RADIUS);
+
+            // OUTPUTS
             for (int i=0; i<gate.getOutputs().size(); i++) {
                 if (gate.isFocused() && gate.getSelectedConnector() == i) {
                     g.setColor(new Color(241, 8, 103));
@@ -186,6 +196,17 @@ public class Panel extends JPanel implements Observer {
         paintGates(g);
         paintConnections(g);
         paintConnectors(g);
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+        //TODO
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        this.mouseX = e.getX();
+        this.mouseY = e.getY();
     }
 
     /**
