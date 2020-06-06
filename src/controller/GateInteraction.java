@@ -40,10 +40,12 @@ public class GateInteraction extends JPanel implements MouseListener {
         }
         if (SwingUtilities.isRightMouseButton(e)) {
             Gate gate = this.circuit.findGateAt(e.getX(), e.getY());
-            if (gate != null && gate.isSelected() == false) {
-                this.circuit.selectGate(gate);
-            } else {
-                this.circuit.unselectGate(gate);
+            if (gate != null) {
+                if (gate.isSelected() == false) {
+                    this.circuit.selectGate(gate);
+                } else {
+                    this.circuit.unselectGate(gate);
+                }
             }
         }
     }
